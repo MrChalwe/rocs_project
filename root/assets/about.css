@@ -1,0 +1,307 @@
+/* ===============================
+   GLOBAL STYLES
+================================= */
+
+:root {
+  --color-primary: #FBD508;
+  --color-secondary: #32365F;
+  --color-accent: #e94560;
+  --color-dark: #1e2142;
+  --color-text: #32365F;
+  --color-text-light: #ffffff;
+  --color-text-muted: #a0a0a0;
+  --color-border: rgba(255, 255, 255, 0.1);
+
+  --top-navbar-height: 60px;
+  --main-navbar-height: 80px;
+
+  --font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section-title {
+    font-size: 2.25rem;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #ffffff;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1, h2, h3 {
+    color: #32365F;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.light-bg {
+    background: #f7f8fc;
+}
+
+/* ===============================
+   HERO SECTION
+================================= */
+
+.about-hero {
+    background: linear-gradient(rgba(50,54,95,0.9), rgba(50,54,95,0.9)),
+                url('./img/Impact.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #FBD508;
+}
+
+.about-hero p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.1rem;
+}
+
+/* .about-section , p {
+    margin-top: 15px;
+    max-width: 800px;
+    text-align: center;
+} */
+
+
+/* ===============================
+   TWO COLUMN SECTION
+================================= */
+
+.two-column {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+/* ===============================
+   VALUES SECTION
+================================= */
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.value-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+    border-top: 4px solid #FBD508;
+}
+
+.value-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+
+/* ===============================
+   IMPACT SECTION
+================================= */
+
+.impact-section {
+    background: #32365F;
+    color: #ffffff;
+    text-align: center;
+}
+
+.impact-section h2 {
+    color: #FBD508;
+    margin-bottom: 50px;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.impact-card {
+    padding: 30px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.05);
+    transition: 0.3s ease;
+}
+
+.impact-card:hover {
+    background: rgba(255,255,255,0.12);
+    transform: translateY(-5px);
+}
+
+.impact-card h3 {
+    font-size: 2rem;
+    color: #FBD508;
+    margin-bottom: 10px;
+}
+
+/* ===============================
+   AREAS LIST
+================================= */
+
+.areas-list {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.areas-list li {
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.areas-list li::before {
+    content: "●";
+    color: #FBD508;
+    position: absolute;
+    left: 0;
+}
+
+/* ===============================
+   TEAM SECTION
+================================= */
+
+.team-section {
+    text-align: center;
+}
+
+.team-section p {
+    margin-bottom: 50px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.team-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+}
+
+.team-img img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.team-card:hover .team-img img {
+    transform: scale(1.05);
+}
+
+.team-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.team-content h3 {
+    margin-bottom: 5px;
+}
+
+.role {
+    color: #FBD508;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* ===============================
+   CONTACT SECTION
+================================= */
+
+
+.partners-cta {
+  text-align: center;
+  background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-dark) 100%);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+}
+
+.partners-cta p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  margin-bottom: 1.25rem;
+}
+
+.partners-cta h2{
+    color: var(--color-primary)
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: transparent;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 2px solid var(--color-primary);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.btn-outline:hover {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(251, 213, 8, 0.3);
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 768px) {
+
+    .about-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .team-img img {
+        height: 220px;
+    }
+
+}
