@@ -234,6 +234,21 @@ function handleImpactAnimation() {
   }
 }
 
+
+  // Accordion functionality for Provinces
+  document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+      const item = header.parentElement;
+      const content = item.querySelector('.accordion-content');
+
+      // Toggle active class
+      item.classList.toggle('active');
+      content.classList.toggle('open');
+    });
+  });
+
+
+
 // Check on scroll and load
 window.addEventListener('scroll', handleImpactAnimation, { passive: true });
 window.addEventListener('load', handleImpactAnimation);

@@ -34,6 +34,7 @@ body {
     line-height: 1.6;
     color: #333;
     background: #ffffff;
+    /* background: #d40000; */
     overflow-x: hidden;
 }
 
@@ -284,6 +285,103 @@ section {
   color: var(--color-secondary);
   transform: translateY(-3px);
   box-shadow: 0 10px 25px rgba(251, 213, 8, 0.3);
+}
+
+/* ====================== MODERN WHERE WE WORK SECTION ====================== */
+.modern-provinces {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.province-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(50, 54, 95, 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #f0f0f0;
+}
+
+.province-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(50, 54, 95, 0.15);
+  border-color: #FBD508;
+}
+
+.province-header {
+  padding: 1.25rem 1.75rem;
+  background: linear-gradient(135deg, #32365F, #1e2142);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.province-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.project-count {
+  background: #FBD508;
+  color: #32365F;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 4px 14px;
+  border-radius: 50px;
+}
+
+.province-projects {
+  padding: 1.25rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.project-link {
+  color: #32365F;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  background: #f8f9fa;
+  transition: all 0.3s ease;
+  display: block;
+  font-size: 1rem;
+}
+
+.project-link:hover {
+  background: #FBD508;
+  color: #32365F;
+  transform: translateX(8px);
+}
+
+/* Map Styling */
+.work-map-container {
+  text-align: center;
+  margin: 2.5rem 0;
+}
+
+.work-map-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.map-caption {
+  margin-top: 12px;
+  font-size: 0.95rem;
+  color: #666;
+  font-style: italic;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .modern-provinces {
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  }
 }
 
 /* ===============================
