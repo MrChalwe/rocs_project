@@ -2,16 +2,70 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/Logo/Logo.png">
     <title>About Us | ROCS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/about.css" />
     <link rel="stylesheet" href="./assets/main.css" />
+    <link rel="stylesheet" href="./assets/about.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
   </head>
   <body>
+    <header class="header">
+      <!-- Top Navbar - 60px -->
+      <nav class="top-navbar">
+        <div class="left">
+          <a href="#" class="social-icon" aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="#" class="social-icon" aria-label="Twitter"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="#" class="social-icon" aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" class="social-icon" aria-label="LinkedIn"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
+        <div class="right">
+          <a href="mailto:info@rocsedu.org" class="contact-link">
+            <i class="fas fa-envelope"></i>
+            <span>info@rocsedu.org</span>
+          </a>
+          <a href="tel:+260966765265" class="contact-link">
+            <i class="fas fa-phone"></i>
+            <span>+260 966 765 265</span>
+          </a>
+        </div>
+      </nav>
+
+      <!-- Bottom Navbar - 80px -->
+      <nav class="main-navbar">
+        <div class="logo">
+          <a href="#">
+            <img src="./assets/img/Logo/Logo.png" alt="Logo" class="logo-img" />
+          </a>
+        </div>
+        <button
+          class="mobile-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span class="hamburger"></span>
+        </button>
+        <div class="nav-links">
+          <a href="#" class="nav-link active">Home</a>
+          <a href="#" class="nav-link">About Us</a>
+          <a href="#" class="nav-link">Our Work</a>
+          <a href="#" class="nav-link">Impact</a>
+          <a href="#" class="nav-link">Where We Work</a>
+          <a href="#" class="nav-link">Get Involved</a>
+        </div>
+      </nav>
+    </header>
     <!-- HERO SECTION -->
     <section class="about-hero">
       <div class="container">
@@ -177,6 +231,66 @@
         </ul>
       </div>
     </section>
+    
+
+    <!-- ====================== WHERE WE WORK SECTION ====================== -->
+<section class="about-section" id="where-we-work">
+  <div class="container">
+    <h2>Where We Work</h2>
+    <p class="section-subtitle">ROCS is actively implementing impactful projects across Zambia, empowering vulnerable children and communities through education, WASH, nutrition, and climate resilience.</p>
+
+    <!-- Map -->
+    <div class="work-map-container">
+      <img src="./assets/img/ROCS Presence Map.png" 
+           alt="ROCS Presence Map showing project locations across Zambia">
+      <p class="map-caption">Our current project footprint across Eastern, Northern, and Muchinga Provinces</p>
+    </div>
+
+    <!-- Modern Provinces Cards -->
+    <div class="modern-provinces">
+
+      <!-- Eastern Province -->
+      <div class="province-card">
+        <div class="province-header">
+          <span class="province-name">Eastern Province</span>
+          <span class="project-count">4 Projects</span>
+        </div>
+        <div class="province-projects">
+          <a href="news/aview-gep-project.html" class="project-link">AVIEW-GEP – Inclusive & Climate-Resilient WASH Governance</a>
+          <a href="news/become-project.html" class="project-link">BECOME Project – Nutrition, WASH & Community Health</a>
+          <a href="news/slacen-project.html" class="project-link">SLACEN – Early Childhood Education & Nutrition</a>
+          <a href="news/wanu-ii-project.html" class="project-link">WANU II – Community Resilience through WASH, Health & Nutrition</a>
+        </div>
+      </div>
+
+      <!-- Northern Province -->
+      <div class="province-card">
+        <div class="province-header">
+          <span class="province-name">Northern Province</span>
+          <span class="project-count">2 Projects</span>
+        </div>
+        <div class="province-projects">
+          <a href="news/gik-project.html" class="project-link">GIK Project – Literacy & Book Distribution</a>
+          <a href="news/sri-project.html" class="project-link">School Readiness Initiative (SRI)</a>
+        </div>
+      </div>
+
+      <!-- Muchinga Province -->
+      <div class="province-card">
+        <div class="province-header">
+          <span class="province-name">Muchinga Province</span>
+          <span class="project-count">2 Projects</span>
+        </div>
+        <div class="province-projects">
+          <a href="news/sri-project.html" class="project-link">School Readiness Initiative (SRI)</a>
+          <a href="news/wanu-ii-project.html" class="project-link">WANU II – Community Resilience</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
     <!-- TEAM SECTION -->
     <section class="team-section light-bg">
@@ -254,11 +368,11 @@
 
       
     </section> -->
-    <div class="container">
+    <div class="container" style="margin-bottom: 100px;">
       <div class="partners-cta">
         <h2>Contact Us</h2>
         <p><strong>Reformed Open Community Schools (ROCS)</strong></p>
-        <p>National Secretariat – Zambia</p>
+        <p>Head Office – Zambia</p>
         <p>Email: info@rocsedu.org</p>
         <p>Phone: +260 966 765 265</p>
         <a href="#" class="btn-outline">
@@ -267,5 +381,110 @@
         </a>
       </div>
     </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Footer Top -->
+        <div class="footer-top">
+          <div class="footer-brand">
+            <img
+              src="./assets/img/Logo/Logo.png"
+              alt="ROCS Logo"
+              class="footer-logo"
+            />
+            <p>
+              Reformed Open Community Schools - Empowering vulnerable children
+              in Zambia through quality, inclusive, and equitable education
+              since 1997.
+            </p>
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" aria-label="YouTube"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>Advocacy & Policy</h4>
+              <ul>
+                <li><a href="#">Community-Led Advocacy</a></li>
+                <li><a href="#">Policy Engagement</a></li>
+                <li><a href="#">Networks & Coalitions</a></li>
+                <li><a href="#">Evidence & Learning</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h4>Partners</h4>
+              <ul>
+                <li><a href="#">Development Partners</a></li>
+                <li><a href="#">Networks & Coalitions</a></li>
+                <li><a href="#">Government Collaboration</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h4>Resources</h4>
+              <ul>
+                <li><a href="#">Reports & Publications</a></li>
+                <li><a href="#">Policies & Frameworks</a></li>
+                <li><a href="#">Toolkits & Learning Materials</a></li>
+                <li><a href="#">Media Gallery</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h4>News & Updates</h4>
+              <ul>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Blog / Insights</a></li>
+                <li><a href="#">Press Releases</a></li>
+                <li><a href="#">Events</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h4>Contact</h4>
+              <ul>
+                <li><a href="#">National Secretariat</a></li>
+                <li><a href="#">Field Offices</a></li>
+                <li><a href="#">General Enquiries</a></li>
+              </ul>
+              <div class="footer-contact-info">
+                <p><i class="fas fa-envelope"></i> info@rocs.org.zm</p>
+                <p><i class="fas fa-phone"></i> +260 211 123 456</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <div class="footer-copyright">
+            <p>
+              &copy; 2026 Reformed Open Community Schools (ROCS). All rights
+              reserved.
+            </p>
+          </div>
+          <div class="footer-legal">
+            <a href="#">Developed by Cloudworx</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./assets/main.js"></script>
   </body>
 </html>
