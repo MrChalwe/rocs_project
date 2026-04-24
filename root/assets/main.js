@@ -252,3 +252,27 @@ function handleImpactAnimation() {
 // Check on scroll and load
 window.addEventListener('scroll', handleImpactAnimation, { passive: true });
 window.addEventListener('load', handleImpactAnimation);
+
+
+// ====================== ACTIVE NAV LINK ======================
+function setActiveNav() {
+  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+  
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.classList.remove('active');
+    
+    const href = link.getAttribute('href');
+    
+    // Match current page with link
+    if (href === currentPage || 
+        (currentPage === "index.html" && href.includes("index"))) {
+      link.classList.add('active');
+    }
+  });
+}
+
+// Run when page loads
+document.addEventListener('DOMContentLoaded', setActiveNav);
+
+// In case navbar is loaded dynamically
+window.addEventListener('load', setActiveNav);

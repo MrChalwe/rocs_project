@@ -9,47 +9,62 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 <body>
-  <header class="header">
-    <!-- Top Navbar -->
-    <nav class="top-navbar">
-      <div class="left">
-        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-      </div>
-      <div class="right">
-        <a href="mailto:info@rocsedu.org" class="contact-link">
-          <i class="fas fa-envelope"></i>
-          <span>info@rocsedu.org</span>
-        </a>
-        <a href="tel:+260966765265" class="contact-link">
-          <i class="fas fa-phone"></i>
-          <span>+260 966 765 265</span>
-        </a>
-      </div>
-    </nav>
+<!-- Navbar -->
+<div class="header">
+  <!-- Top Navbar -->
+  <div class="top-navbar">
+    <div class="left">
+      <!-- Social Icons -->
+      <a href="https://web.facebook.com/rocsedu.org" class="social-icon" target="_blank" title="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://x.com/rocsedu" class="social-icon" target="_blank" title="X (Twitter)">
+        <i class="fab fa-x-twitter"></i>
+      </a>
+      <!-- <a href="#" class="social-icon" target="_blank" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a> -->
+      <a href="https://zm.linkedin.com/company/the-reformed-open-community-schools" class="social-icon" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://www.youtube.com/@rocsedu" class="social-icon" target="_blank" title="YouTube">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
 
-    <!-- Main Navbar -->
-    <nav class="main-navbar">
-      <div class="logo">
-        <a href="../index.html">
-          <img src="../assets/img/Logo/Logo.png" alt="ROCS Logo" class="logo-img" />
-        </a>
-      </div>
-      <button class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span class="hamburger"></span>
-      </button>
-      <div class="nav-links">
-        <a href="../index.html" class="nav-link">Home</a>
-        <a href="../about.html" class="nav-link">About Us</a>
-        <a href="../index.html#programmes" class="nav-link">Our Work</a>
-        <a href="../index.html#impact" class="nav-link">Impact</a>
-        <a href="../about.html#where-we-work" class="nav-link">Where We Work</a>
-        <a href="../news.html" class="nav-link">News</a>
-      </div>
-    </nav>
-  </header>
+    <div class="right">
+      <a href="mailto:info@rocsedu.org" class="contact-link">
+        <i class="fas fa-envelope"></i>
+        <span>info@rocsedu.org</span>
+      </a>
+      <a href="tel:+260966765265" class="contact-link">
+        <i class="fas fa-phone"></i>
+        <span>+260 966 765 265</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Main Navbar -->
+  <nav class="main-navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/img/Logo/Logo.png" alt="ROCS Logo" class="logo-img">
+      </a>
+    </div>
+
+    <button class="mobile-toggle" aria-label="Toggle menu">
+      <span class="hamburger"></span>
+    </button>
+
+    <div class="nav-links">
+      <a href="index.html"       class="nav-link" data-page="index">Home</a>
+      <a href="about.html"       class="nav-link" data-page="about">About Us</a>
+      <a href="resources.html"   class="nav-link" data-page="resources">Resources</a>
+      <a href="news.html"        class="nav-link" data-page="news">News Reports</a>
+    </div>
+  </nav>
+</div>
+<!-- Navbar -->
 
   <!-- Article Hero -->
   <section class="article-hero">
