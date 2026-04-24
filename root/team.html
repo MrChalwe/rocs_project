@@ -80,12 +80,69 @@
 <body>
 
   <!-- Navbar -->
-  <?php include 'partials/navbar.html'; ?>   <!-- or paste your navbar code -->
+  <!-- <?php include 'partials/navbar.html'; ?>   or paste your navbar code -->
+
+  <!-- Navbar -->
+<div class="header">
+  <!-- Top Navbar -->
+  <div class="top-navbar">
+    <div class="left">
+      <!-- Social Icons -->
+      <a href="https://web.facebook.com/rocsedu.org" class="social-icon" target="_blank" title="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://x.com/rocsedu" class="social-icon" target="_blank" title="X (Twitter)">
+        <i class="fab fa-x-twitter"></i>
+      </a>
+      <!-- <a href="#" class="social-icon" target="_blank" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a> -->
+      <a href="https://zm.linkedin.com/company/the-reformed-open-community-schools" class="social-icon" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://www.youtube.com/@rocsedu" class="social-icon" target="_blank" title="YouTube">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
+
+    <div class="right">
+      <a href="mailto:info@rocsedu.org" class="contact-link">
+        <i class="fas fa-envelope"></i>
+        <span>info@rocsedu.org</span>
+      </a>
+      <a href="tel:+260966765265" class="contact-link">
+        <i class="fas fa-phone"></i>
+        <span>+260 966 765 265</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Main Navbar -->
+  <nav class="main-navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/img/Logo/Logo.png" alt="ROCS Logo" class="logo-img">
+      </a>
+    </div>
+
+    <button class="mobile-toggle" aria-label="Toggle menu">
+      <span class="hamburger"></span>
+    </button>
+
+    <div class="nav-links">
+      <a href="index.html"       class="nav-link" data-page="index">Home</a>
+      <a href="about.html"       class="nav-link" data-page="about">About Us</a>
+      <a href="resources.html"   class="nav-link" data-page="resources">Resources</a>
+      <a href="news.html"        class="nav-link" data-page="news">News Reports</a>
+    </div>
+  </nav>
+</div>
+<!-- Navbar -->
 
   <!-- Hero -->
   <section class="team-hero">
     <div class="container">
-      <h1 style="font-size: 3.2rem; margin-bottom: 20px;">Our Team</h1>
+      <h1 style="font-size: 3.2rem; margin-bottom: 20px;" class="text-color-prime">Our Team</h1>
       <p style="font-size: 1.3rem; max-width: 800px; margin: 0 auto;">
         Passionate leaders and dedicated staff working to deliver quality, inclusive education across Zambia.
       </p>

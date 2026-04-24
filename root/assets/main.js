@@ -276,3 +276,28 @@ document.addEventListener('DOMContentLoaded', setActiveNav);
 
 // In case navbar is loaded dynamically
 window.addEventListener('load', setActiveNav);
+
+// Images Modal for Projects
+// ====================== ARTICLE IMAGE GALLERY ======================
+document.addEventListener('DOMContentLoaded', () => {
+
+  const galleryButtons = document.querySelectorAll('.gallery-toggle-btn');
+
+  galleryButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const galleryContainer = this.nextElementSibling;
+      
+      if (!galleryContainer) return;
+
+      // Toggle visibility
+      if (galleryContainer.style.display === 'grid') {
+        galleryContainer.style.display = 'none';
+        this.innerHTML = '<i class="fas fa-images"></i> View All Images';
+      } else {
+        galleryContainer.style.display = 'grid';
+        this.innerHTML = '<i class="fas fa-images"></i> Hide Images';
+      }
+    });
+  });
+
+});
